@@ -4,81 +4,404 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Academy - {Page Title}</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <title>EduPro Academy - Online Learning Platform</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #6a0dad;">
-            <a class="navbar-brand" href="index.html" style="color: white;">Online Academy</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary-purple sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                🎓 EduPro Academy
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a class="nav-link" href="index.html" style="color: white;">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="about.html" style="color: white;">About Us</a></li>
-                    <li class="nav-item"><a class="nav-link" href="courses.html" style="color: white;">Courses</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contact.html" style="color: white;">Contact Us</a>
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="courses.html">Courses</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="login.html" style="color: white;">Login</a></li>
-                    <li class="nav-item"><a class="nav-link" href="signup.html" style="color: white;">Sign Up</a></li>
-                </ul>
+
+                <div class="d-flex gap-2">
+                    <a href="login.html" class="btn btn-outline-light btn-sm">Login</a>
+                    <a href="signup.html" class="btn btn-light btn-sm text-primary-purple">Sign Up</a>
+                </div>
             </div>
-        </nav>
-    </header>
-    <main class="container mt-4">
-        <main class="container mt-4">
-            <div class="jumbotron text-center">
-                <h1>Welcome to Online Academy</h1>
-                <p>Learn from the best instructors around the world.</p>
-                <a href="courses.html" class="btn btn-light">Explore Courses</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section d-flex align-items-center text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">
+                        Transform Your Future with
+                        <span class="text-warning"> Quality Education</span>
+                    </h1>
+                    <p class="lead mb-4">
+                        Join over 50,000+ students worldwide and master in-demand skills with our comprehensive online
+                        courses.
+                        Learn from industry experts and advance your career.
+                    </p>
+                    <div class="d-flex gap-3 flex-wrap">
+                        <a href="courses.html" class="btn btn-warning btn-lg px-4">Explore Courses</a>
+                        <a href="signup.html" class="btn btn-outline-light btn-lg px-4">Start Free Trial</a>
+                    </div>
+
+                    <div class="row mt-5">
+                        <div class="col-4">
+                            <h3 class="fw-bold">50K+</h3>
+                            <p class="mb-0">Students</p>
+                        </div>
+                        <div class="col-4">
+                            <h3 class="fw-bold">200+</h3>
+                            <p class="mb-0">Courses</p>
+                        </div>
+                        <div class="col-4">
+                            <h3 class="fw-bold">95%</h3>
+                            <p class="mb-0">Success Rate</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 text-center">
+                    <img src="https://via.placeholder.com/600x500/6a0dad/ffffff?text=Online+Learning"
+                        alt="Online Learning" class="img-fluid rounded">
+                </div>
             </div>
-            <h2 class="text-center">Featured Courses</h2>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-primary-purple mb-3">Why Choose EduPro Academy?</h2>
+                <p class="lead text-muted">We provide world-class education with modern learning methods</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="text-center">
+                        <div class="feature-icon">👨‍🏫</div>
+                        <h4 class="text-primary-purple mb-3">Expert Instructors</h4>
+                        <p class="text-muted">
+                            Learn from industry professionals with years of real-world experience and proven track
+                            records in
+                            their respective fields.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="text-center">
+                        <div class="feature-icon">🎯</div>
+                        <h4 class="text-primary-purple mb-3">Practical Learning</h4>
+                        <p class="text-muted">
+                            Hands-on projects and real-world case studies to ensure you gain practical skills that
+                            employers are
+                            looking for.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="text-center">
+                        <div class="feature-icon">🏆</div>
+                        <h4 class="text-primary-purple mb-3">Certification</h4>
+                        <p class="text-muted">
+                            Earn industry-recognized certificates upon course completion to boost your resume and career
+                            prospects.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="text-center">
+                        <div class="feature-icon">⏰</div>
+                        <h4 class="text-primary-purple mb-3">Flexible Schedule</h4>
+                        <p class="text-muted">
+                            Learn at your own pace with 24/7 access to course materials. Perfect for working
+                            professionals and
+                            busy schedules.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="text-center">
+                        <div class="feature-icon">💬</div>
+                        <h4 class="text-primary-purple mb-3">Community Support</h4>
+                        <p class="text-muted">
+                            Join a vibrant community of learners, get help from peers, and network with professionals in
+                            your
+                            field.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="text-center">
+                        <div class="feature-icon">📱</div>
+                        <h4 class="text-primary-purple mb-3">Mobile Learning</h4>
+                        <p class="text-muted">
+                            Access courses on any device, anywhere. Download content for offline learning and never miss
+                            a lesson.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popular Courses -->
+    <section class="section-padding">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-primary-purple mb-3">Popular Courses</h2>
+                <p class="lead text-muted">Discover our most enrolled courses</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 card-hover border-0 shadow">
+                        <img src="https://via.placeholder.com/400x200/6a0dad/ffffff?text=Web+Development"
+                            alt="Web Development" class="card-img-top">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-primary-purple">Web Development</span>
+                                <span class="text-warning">⭐ 4.9</span>
+                            </div>
+                            <h5 class="card-title text-primary-purple">Full Stack Web Development</h5>
+                            <p class="card-text text-muted">
+                                Master modern web development with React, Node.js, and MongoDB. Build real-world
+                                applications from
+                                scratch.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-muted">12 weeks • 45 lessons</span>
+                                <h6 class="text-primary-purple mb-0">$299</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 card-hover border-0 shadow">
+                        <img src="https://via.placeholder.com/400x200/28a745/ffffff?text=Data+Science"
+                            alt="Data Science" class="card-img-top">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-success">Data Science</span>
+                                <span class="text-warning">⭐ 4.8</span>
+                            </div>
+                            <h5 class="card-title text-primary-purple">Data Science & Analytics</h5>
+                            <p class="card-text text-muted">
+                                Learn Python, machine learning, and data visualization. Become a data scientist in high
+                                demand.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-muted">16 weeks • 60 lessons</span>
+                                <h6 class="text-primary-purple mb-0">$399</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 card-hover border-0 shadow">
+                        <img src="https://via.placeholder.com/400x200/17a2b8/ffffff?text=Digital+Marketing"
+                            alt="Digital Marketing" class="card-img-top">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between align-items-center mb-2">
+                                <span class="badge bg-info">Marketing</span>
+                                <span class="text-warning">⭐ 4.7</span>
+                            </div>
+                            <h5 class="card-title text-primary-purple">Digital Marketing Mastery</h5>
+                            <p class="card-text text-muted">
+                                Master SEO, social media marketing, Google Ads, and content marketing. Grow any business
+                                online.
+                            </p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="text-muted">10 weeks • 35 lessons</span>
+                                <h6 class="text-primary-purple mb-0">$249</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="courses.html" class="btn btn-primary-purple btn-lg px-5">View All Courses</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="section-padding bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-primary-purple mb-3">What Our Students Say</h2>
+                <p class="lead text-muted">Success stories from our amazing community</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow h-100">
+                        <div class="card-body text-center">
+                            <img src="https://via.placeholder.com/80x80/6a0dad/ffffff?text=SJ" alt="Sarah Johnson"
+                                class="rounded-circle mb-3">
+                            <h6 class="text-primary-purple">Sarah Johnson</h6>
+                            <small class="text-muted">Software Developer</small>
+                            <p class="mt-3 text-muted">
+                                "The web development course completely transformed my career. I went from zero coding
+                                knowledge to
+                                landing my dream job in just 6 months!"
+                            </p>
+                            <div class="text-warning">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow h-100">
+                        <div class="card-body text-center">
+                            <img src="https://via.placeholder.com/80x80/6a0dad/ffffff?text=MC" alt="Mike Chen"
+                                class="rounded-circle mb-3">
+                            <h6 class="text-primary-purple">Mike Chen</h6>
+                            <small class="text-muted">Data Analyst</small>
+                            <p class="mt-3 text-muted">
+                                "The data science program is incredibly comprehensive. The instructors are knowledgeable
+                                and the
+                                projects are very practical."
+                            </p>
+                            <div class="text-warning">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow h-100">
+                        <div class="card-body text-center">
+                            <img src="https://via.placeholder.com/80x80/6a0dad/ffffff?text=ER" alt="Emily Rodriguez"
+                                class="rounded-circle mb-3">
+                            <h6 class="text-primary-purple">Emily Rodriguez</h6>
+                            <small class="text-muted">Marketing Manager</small>
+                            <p class="mt-3 text-muted">
+                                "The digital marketing course helped me increase my company's online presence by 300%.
+                                Highly
+                                recommend!"
+                            </p>
+                            <div class="text-warning">⭐⭐⭐⭐⭐</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="section-padding bg-primary-purple text-white">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-4">Ready to Start Your Learning Journey?</h2>
+            <p class="lead mb-5">
+                Join thousands of successful students and transform your career today. Get access to all courses with
+                our
+                premium membership.
+            </p>
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <a href="signup.html" class="btn btn-warning btn-lg px-5">Start Free Trial</a>
+                <a href="courses.html" class="btn btn-outline-light btn-lg px-5">Browse Courses</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-light py-5">
+        <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Course 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Course 1</h5>
-                            <p class="card-text">Learn the basics of this exciting field.</p>
-                            <a href="course-details.html" class="btn btn-primary">View Details</a>
-                        </div>
+                <div class="col-lg-4 mb-4">
+                    <h5 class="text-primary-purple mb-3">🎓 EduPro Academy</h5>
+                    <p class="text-muted">
+                        Empowering minds through quality education. Join thousands of students who have transformed
+                        their careers
+                        with our comprehensive online courses.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-light"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-light"><i class="fab fa-instagram"></i></a>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Course 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Course 2</h5>
-                            <p class="card-text">Advance your skills with expert guidance.</p>
-                            <a href="course-details.html" class="btn btn-primary">View Details</a>
-                        </div>
-                    </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="text-primary-purple mb-3">Quick Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-muted text-decoration-none">Home</a></li>
+                        <li><a href="courses.html" class="text-muted text-decoration-none">Courses</a></li>
+                        <li><a href="about.html" class="text-muted text-decoration-none">About Us</a></li>
+                        <li><a href="contact.html" class="text-muted text-decoration-none">Contact</a></li>
+                    </ul>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Course 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Course 3</h5>
-                            <p class="card-text">Master a new subject today.</p>
-                            <a href="course-details.html" class="btn btn-primary">View Details</a>
-                        </div>
+
+                <div class="col-lg-2 col-md-6 mb-4">
+                    <h6 class="text-primary-purple mb-3">Categories</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-muted text-decoration-none">Web Development</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Data Science</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Digital Marketing</a></li>
+                        <li><a href="#" class="text-muted text-decoration-none">Design</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-4 mb-4">
+                    <h6 class="text-primary-purple mb-3">Newsletter</h6>
+                    <p class="text-muted">Subscribe to get updates on new courses and offers.</p>
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Your email address">
+                        <button class="btn btn-primary-purple" type="button">Subscribe</button>
                     </div>
                 </div>
             </div>
-        </main>
-    </main>
-    <footer class="bg-light text-center py-3">
-        <p>&copy; 2025 Online Academy. All rights reserved.</p>
+
+            <hr class="my-4">
+
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-muted mb-0">© 2024 EduPro Academy. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="#" class="text-muted text-decoration-none me-3">Privacy Policy</a>
+                    <a href="#" class="text-muted text-decoration-none">Terms of Service</a>
+                </div>
+            </div>
+        </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
