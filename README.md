@@ -27,7 +27,6 @@ A professional online academy website built with HTML, CSS, Bootstrap, and JavaS
 - **CSS3**: Custom styling with CSS variables
 - **Bootstrap 5.3.2**: Responsive framework
 - **Font Awesome 6.4.0**: Icon library
-- **JavaScript**: Interactive functionality
 
 ## CDN Links Used
 
@@ -42,23 +41,6 @@ A professional online academy website built with HTML, CSS, Bootstrap, and JavaS
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 \`\`\`
 
-## File Structure
-
-\`\`\`
-/
-├── index.html
-├── about.html
-├── contact.html
-├── login.html
-├── signup.html
-├── courses.html
-├── course-detail.html
-├── css/
-│   └── style.css
-├── js/
-│   └── main.js
-└── README.md
-\`\`\`
 
 ## Color Scheme
 
@@ -94,7 +76,3 @@ A professional online academy website built with HTML, CSS, Bootstrap, and JavaS
 - Firefox (latest)
 - Safari (latest)
 - Edge (latest)
-
-## License
-
-This project is open source and available under the MIT License.
